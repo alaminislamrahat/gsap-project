@@ -54,21 +54,21 @@ const MessageSection = () => {
       
       ease: "circ.out",
      
-    });
+    },);
 
     const paragraphTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".message-content p",
-        start: "top center",
+        start: "bottom 70%",
         toggleActions: "play reverse play reverse",
       }
     });
 
     paragraphTl.from(paragraphSplite.words,{
+      direction: 1,
       yPercent: 300,
       rotate: 3,
       ease: "power1.inOut",
-      duration: 1,
       stagger: 0.01
     })
 
