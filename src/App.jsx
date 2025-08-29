@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from './Components/NavBar'
 import Hero from './Sections/Hero'
 import gsap from 'gsap';

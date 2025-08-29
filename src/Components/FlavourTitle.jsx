@@ -38,7 +38,7 @@ const FlavourTitle = () => {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             scrollTrigger: {
                 trigger: ".flavor-text-scroll",
-                start: "top 30%",
+                start: "top 40%",
                 toggleActions: "play reverse play reverse",
             }
         })
@@ -46,7 +46,7 @@ const FlavourTitle = () => {
     })
 
     return (
-        <div className="general-title col-center h-full gap-16 xl:gap-24">
+        <div className="general-title col-center h-full 2xl:gap-32 gap-16 xl:gap-24">
             <div className="overflow-hidden 2xl:py-0 py-3 first-text-split">
                 <h1>We have 6</h1>
             </div>
