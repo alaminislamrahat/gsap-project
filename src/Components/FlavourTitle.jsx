@@ -18,7 +18,7 @@ const FlavourTitle = () => {
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: ".flavor-section",
-                start: "top 40%",
+                start: "top 50%",
                 toggleActions: "play reverse play reverse",
             }
         })
@@ -28,7 +28,7 @@ const FlavourTitle = () => {
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: ".flavor-section",
-                start: "top 1%",
+                start: "top 30%",
                 toggleActions: "play reverse play reverse",
             }
         })
@@ -36,9 +36,10 @@ const FlavourTitle = () => {
         gsap.to(".flavor-text-scroll",{
             duration: 1,
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            
             scrollTrigger: {
                 trigger: ".flavor-text-scroll",
-                start: "top 40%",
+                start: "top 70%",
                 toggleActions: "play reverse play reverse",
             }
         })
