@@ -16,14 +16,17 @@ const VideoPinSection = () => {
       }
     });
 
-    
+    tl.to(".video-box",{
+      clipPath: "circle(100% at 50% 50%)",
+      ease: "power1.inOut"
+    })
   })
 
   return (
     <section className='vd-pin-section'>
       <div 
       style={{
-
+        clipPath: "circle(10% at 50% 50%)"
       }}
       className="video-box size-full">
         <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay></video>
