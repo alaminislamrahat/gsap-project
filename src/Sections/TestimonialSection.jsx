@@ -9,6 +9,26 @@ const TestimonialSection = () => {
         gsap.set(".testimonials-section",{
             marginTop: "-140vh",
         })
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".testimonials-section",
+                start: "top bottom",
+                end: "200% top",
+                scrub: true,
+                markers: true,
+            }
+        })
+
+        tl.to(".testimonials-section .first-title",{
+            xPercent: 70,
+        })
+        tl.to(".testimonials-section .second-title",{
+            xPercent: 25,
+        },"<")
+        tl.to(".testimonials-section .third-title",{
+            xPercent: -50,
+        },"<")
     })
 
     const vidRef = useRef([])
