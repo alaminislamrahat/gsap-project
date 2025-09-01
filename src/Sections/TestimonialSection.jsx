@@ -29,6 +29,24 @@ const TestimonialSection = () => {
         tl.to(".testimonials-section .third-title",{
             xPercent: -50,
         },"<")
+
+
+        const pinTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".testimonials-section",
+                start: "10% top",
+                end: "200% top",
+                pin: true,
+                scrub: 1.5,
+                markers: true,
+            }
+        });
+
+        pinTl.from(".vd-card",{
+            yPercent: 150,
+            stagger: 0.2,
+            ease: "power1.inOut"
+        })
     })
 
     const vidRef = useRef([])
