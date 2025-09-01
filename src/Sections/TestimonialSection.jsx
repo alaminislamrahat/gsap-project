@@ -1,7 +1,15 @@
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import { cards } from '../Constants'
-
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap/all'
 const TestimonialSection = () => {
+
+
+    useGSAP(()=>{
+        gsap.set(".testimonials-section",{
+            marginTop: "-140vh",
+        })
+    })
 
     const vidRef = useRef([])
 
