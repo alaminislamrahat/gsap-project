@@ -12,14 +12,15 @@ const VideoPinSection = () => {
         end: "200% top",
         scrub: 1.5,
         pin: true,
-        markers: true,
       }
     });
 
     tl.to(".video-box",{
       clipPath: "circle(100% at 50% 50%)",
-      ease: "power1.inOut"
+      ease: "power1.inOut",
+      
     })
+    
   })
 
   return (
