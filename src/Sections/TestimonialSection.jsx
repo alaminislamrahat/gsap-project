@@ -38,7 +38,6 @@ const TestimonialSection = () => {
                 end: "200% top",
                 pin: true,
                 scrub: 1.5,
-                markers: true,
             }
         });
 
