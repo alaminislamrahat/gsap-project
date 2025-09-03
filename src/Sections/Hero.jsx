@@ -45,8 +45,9 @@ const Hero = () => {
   return (
     <section className="bg-main-bg">
        <div className="hero-container">
-            <img className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-60 md:scale-120 lg:120" 
-            src="/images/static-img.png" alt="" />
+            {/* <img className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-60 md:scale-120 lg:120" 
+            src="/images/static-img.png" alt="" /> */}
+            <video className="w-full absolute inset-0 h-full object-cover" autoPlay muted playsInline src="/videos/hero-bg.mp4"></video>
             <div className="hero-content opacity-0">
                 <div className="overflow-hidden">
                     <h1 className="hero-title">Freaking Delicious</h1>

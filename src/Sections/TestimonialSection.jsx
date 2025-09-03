@@ -16,7 +16,6 @@ const TestimonialSection = () => {
                 start: "top bottom",
                 end: "200% top",
                 scrub: true,
-                markers: true,
             }
         })
 
